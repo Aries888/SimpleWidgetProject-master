@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Start up activity!-->
+    <color name="colorStartUpStartBg">#495565</color>
+    <color name="colorStartUpCenterBg">#343c47</color>
+    <color name="colorStartUpEndBg">#21252e</color>
+    <!--Start up end!-->
+
+</resources>

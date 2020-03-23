@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">框架</string>
+    <string name="app_empty_data">暂无</string>
+    <string name="str_app_starting">系统启动中，请稍候。。。</string>
+    <string name="str_app_maintain">系统维护中~~~</string>
+    <string name="app_not_allow_author">请重新打开软件并授权相关使用权限，否则将无法使用本软件！</string>
+</resources>
