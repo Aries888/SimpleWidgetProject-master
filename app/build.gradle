@@ -10,82 +10,6 @@ android {
         versionName rootProject.ext.android.versionName
         testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
     }
-    //签名
-    signingConfigs {
-        debug {
-            Properties localProps = new Properties()
-            localProps.load(new FileInputStream(file('../local.properties')))
-            Properties keyProps = new Properties();
-            keyProps.load(new FileInputStream(file(localProps['debug.keystore.props.file'])))
-
-            storeFile file(keyProps['storeFile'])
-            storePassword keyProps['storePassword']
-            keyAlias keyProps['keyAlias']
-            keyPassword keyProps['keyPassword']
-        }
-        release {
-            Properties localProps = new Properties()
-            localProps.load(new FileInputStream(file('../local.properties')))
-            Properties keyProps = new Properties();
-            keyProps.load(new FileInputStream(file(localProps['release.keystore.props.file'])))
-
-            storeFile file(keyProps['storeFile'])
-            storePassword keyProps['storePassword']
-            keyAlias keyProps['keyAlias']
-            keyPassword keyProps['keyPassword']
-        }
-    }
-
-    buildTypes {
-        debug {
-            //是否启用混淆
-            minifyEnabled false
-            //签名路径
-            signingConfig signingConfigs.debug
-            //设置是否显示log
-            buildConfigField "Boolean", "DEBUG_LOG", "true"
-        }
-        release {
-            //移除无用的resource文件
-            shrinkResources true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
-            signingConfig signingConfigs.release
-            buildConfigField "Boolean", "DEBUG_LOG", "false"
-            //zipanlign优化
-            zipAlignEnabled true
-        }
-    }
-
-    flavorDimensions "channel", "type"
-    productFlavors {
-        aptdev {
-            dimension "channel"
-        }
-        longbo {
-            dimension 'channel'
-        }
-        custom {
-            dimension "type"
-        }
-        privater {
-            dimension "type"
-        }
-    }
-
-    applicationVariants.all {
-        variant ->
-            variant.outputs.all {
-                if (variant.buildType.name.equals("release")) {
-                    outputFileName = "app${variant.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
-                }
-            }
-    }
-
-    lintOptions {
-        abortOnError false
-    }
 
 }
 
@@ -94,6 +18,8 @@ dependencies {
     testImplementation rootProject.ext.dependencies.jutil4
     androidTestImplementation rootProject.ext.dependencies.tRunner
     androidTestImplementation rootProject.ext.dependencies.espressoCore
+
+    implementation project(':myWidget')
 
 }
 
