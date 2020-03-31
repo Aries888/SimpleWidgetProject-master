@@ -11,6 +11,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -493,6 +494,10 @@ public class NativeVideoPlayer extends FrameLayout implements MediaPlayer.OnPrep
 
     public void changeExitBtnState(boolean visible) {
         exit.setVisibility(visible ? View.VISIBLE : View.GONE);
+    }
+
+    public void changeExitBtnTextSize(int unit, int textSize) {
+        exit.setTextSize(unit, textSize);
     }
 
     private int getVideoMode() {
