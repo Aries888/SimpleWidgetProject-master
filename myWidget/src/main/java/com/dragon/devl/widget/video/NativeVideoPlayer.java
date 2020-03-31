@@ -491,6 +491,10 @@ public class NativeVideoPlayer extends FrameLayout implements MediaPlayer.OnPrep
         }
     }
 
+    public void changeExitBtnState(boolean visible) {
+        exit.setVisibility(visible ? View.VISIBLE : View.GONE);
+    }
+
     private int getVideoMode() {
         return getShared().getInt("video_mode", PLAY_MODE_LIST);
     }

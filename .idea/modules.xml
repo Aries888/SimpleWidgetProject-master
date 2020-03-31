@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FrameworkProject-master.iml" filepath="$PROJECT_DIR$/FrameworkProject-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" filepath="$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleSystem/base/base.iml" filepath="$PROJECT_DIR$/moduleSystem/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modulePublic/common/common.iml" filepath="$PROJECT_DIR$/modulePublic/common/common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleCore/moduleCore.iml" filepath="$PROJECT_DIR$/moduleCore/moduleCore.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modulePublic/modulePublic.iml" filepath="$PROJECT_DIR$/modulePublic/modulePublic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modulePublic/update/modulePublic-update.iml" filepath="$PROJECT_DIR$/modulePublic/update/modulePublic-update.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleSystem/moduleSystem.iml" filepath="$PROJECT_DIR$/moduleSystem/moduleSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/myWidget/myWidget.iml" filepath="$PROJECT_DIR$/myWidget/myWidget.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleSystem/tools/tools.iml" filepath="$PROJECT_DIR$/moduleSystem/tools/tools.iml" />
     </modules>
   </component>
 </project>

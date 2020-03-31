@@ -10,7 +10,6 @@ android {
         versionName rootProject.ext.android.versionName
         testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
     }
-
 }
 
 dependencies {
@@ -20,7 +19,6 @@ dependencies {
     androidTestImplementation rootProject.ext.dependencies.espressoCore
 
     implementation project(':myWidget')
-
 }
 
 static def releaseTime() {
