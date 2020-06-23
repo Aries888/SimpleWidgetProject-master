@@ -7,8 +7,6 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
@@ -24,6 +22,9 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.dragon.devl.widget.R;
 import com.dragon.devl.widget.utils.NiceUtil;
@@ -359,6 +360,18 @@ public class NativeVideoPlayer extends FrameLayout implements MediaPlayer.OnPrep
         //top.setVisibility(GONE);
         bottom.setVisibility(GONE);
         myHandler.removeMessages(HANDLER_HIDE_TOP_BOTTOM);
+    }
+
+    public void setNextButtonVisibility(int visibility) {
+        playNext.setVisibility(visibility);
+    }
+
+    public void setPreviousButtonVisibility(int visibility) {
+        playLast.setVisibility(visibility);
+    }
+
+    public void setVideoListButtonVisibility(int visibility) {
+        ivVdoList.setVisibility(visibility);
     }
 
     public void enterFullScreen() {

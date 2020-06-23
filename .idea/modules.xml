@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" filepath="$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myWidget/myWidget.iml" filepath="$PROJECT_DIR$/myWidget/myWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" filepath="$PROJECT_DIR$/.idea/SimpleWidgetProject-master.iml" group="SimpleWidgetProject-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SimpleWidgetProject-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/myWidget/myWidget.iml" filepath="$PROJECT_DIR$/myWidget/myWidget.iml" group="SimpleWidgetProject-master/myWidget" />
     </modules>
   </component>
 </project>
